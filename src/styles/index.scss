@@ -1,0 +1,20 @@
+@import "font";
+@import "style";
+
+body {
+  /* Box-model */
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+
+  /* Typography */
+  color: white;
+
+  /* Visual */
+  background: $background;
+
+  & > div#surface {
+    /* Box-model */
+    height: 100vh;
+  }
+}
