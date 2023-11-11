@@ -1,0 +1,57 @@
+parser: '@typescript-eslint/parser'
+parserOptions:
+  project: ./tsconfig.json
+  sourceType: module
+  ecmaFeatures:
+    jsx: true
+    tsx: true
+env:
+  es2020: true
+  browser: true
+  jest: true
+plugins:
+  - '@typescript-eslint'
+  - 'react'
+  - 'react-hooks'
+extends:
+  - airbnb-base
+  - eslint:recommended
+  - plugin:compat/recommended
+  - plugin:import/typescript
+  - plugin:react/recommended
+  - plugin:@typescript-eslint/eslint-recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:react/jsx-runtime                         # using the new JSX transform from React 17, should disable this rule see: https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#removing-unused-react-imports
+rules:
+  import/extensions:
+    - error
+    - ignorePackages
+    - js: never
+      jsx: never
+      ts: never
+      tsx: never
+  import/prefer-default-export: off                  # Avoid default export to avoid refactoring when more than 1 export.
+  indent:                                            # Check tsx indent
+    - error
+    - 2
+    - SwitchCase: 1
+  max-classes-per-file:
+    - error
+    - 2                                              # Allow 1 inner class.
+  no-shadow: off                                     # See https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-shadow.md
+  no-underscore-dangle:                              # Allow private fields.
+    - off
+  no-use-before-define: off                          # Allow "import React from 'react'";
+  react/jsx-curly-spacing:                           # Check tsx curly spacing
+    - 2
+    - allowMultiline: false
+  react/jsx-tag-spacing:                             # Require empty space after tsx tag
+    - error
+  '@typescript-eslint/member-ordering': error        # Specifying class member ordering helps project maintenance.
+  '@typescript-eslint/no-shadow': error              # See https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-shadow.md
+  '@typescript-eslint/no-var-requires': 0            # Allow React native <Image /> import local file with require()
+  '@typescript-eslint/no-use-before-define': error   # See https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-use-before-define.md#how-to-use
+  react/no-unused-prop-types: 1                      # Check if a prop is not being used
+settings:
+  polyfills:
+    - Promise                                        # Marking entire API and all methods and properties as polyfilled

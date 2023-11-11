@@ -1,0 +1,200 @@
+@font-face {
+  font-family: font-zh-tw-extra-bold;
+  src: url(../fonts/NotoSansCJKtc-ExtraBold.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: font-zh-tw-bold;
+  src: url(../fonts/NotoSansCJKtc-Bold.otf.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: font-zh-tw;
+  src: url(../fonts/NotoSansCJKtc-Regular.otf.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: font-en-extra-bold;
+  src: url(../fonts/Jost-ExtraBold.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: font-en-bold;
+  src: url(../fonts/Jost-Bold.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: font-en-extra-bold;
+  src: url(../fonts/Jost-Reqular.ttf) format('opentype');
+}
+
+.h1 {
+  /* Typography */
+  font-family: font-en-extra-bold, sans-serif;
+  font-size: 1.67vw;
+  letter-spacing: -0.01vw;
+
+  &:lang(zh-TW) {
+    /* Typography */
+    font-family: font-zh-tw-extra-bold, sans-serif;
+    font-size: 1.25vw;
+    line-height: 1.33;
+    letter-spacing: 0.1vw;
+  }
+}
+
+.h2 {
+  /* Typography */
+  font-family: font-en-extra-bold, sans-serif;
+  font-size: 1.46vw;
+  letter-spacing: 0;
+
+  &:lang(zh-TW) {
+    /* Typography */
+    font-family: font-zh-tw-extra-bold, sans-serif;
+    font-size: 1.15vw;
+    letter-spacing: 0.05vw;
+  }
+}
+
+.h3 {
+  /* Typography */
+  font-family: font-en-extra-bold, sans-serif;
+  font-size: 1.15vw;
+  letter-spacing: 0.01vw;
+
+  &:lang(zh-TW) {
+    /* Typography */
+    font-family: font-zh-tw-extra-bold, sans-serif;
+    font-size: 0.94vw;
+    line-height: 1.33;
+    letter-spacing: 0.05vw;
+  }
+}
+
+.h4 {
+  /* Typography */
+  font-family: font-en-bold, sans-serif;
+  font-size: 0.99vw;
+  letter-spacing: 0.026vw;
+
+  &:lang(zh-TW) {
+    /* Typography */
+    font-family: font-zh-tw-bold, sans-serif;
+    font-size: 0.83vw;
+    letter-spacing: 0.05vw;
+  }
+}
+
+.h5 {
+  /* Typography */
+  font-family: font-en-bold, sans-serif;
+  font-size: 0.83vw;
+  letter-spacing: 0.01vw;
+
+  &:lang(zh-TW) {
+    /* Typography */
+    font-family: font-zh-tw-bold, sans-serif;
+    font-size: 0.73vw;
+    line-height: 1.43;
+    letter-spacing: 0.05vw;
+  }
+}
+
+.h6 {
+  /* Typography */
+  font-family: font-en-bold, sans-serif;
+  font-size: 0.63vw;
+  letter-spacing: 0.026vw;
+
+  &:lang(zh-TW) {
+    /* Typography */
+    font-family: font-zh-tw-bold, sans-serif;
+    font-size: 0.57vw;
+    letter-spacing: 0.05vw;
+  }
+}
+
+.regular {
+  /* Typography */
+  font-family: font-en, sans-serif;
+
+  &:lang(zh-TW) {
+    /* Typography */
+    font-family: font-zh-tw, sans-serif;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .clio-h1 {
+    /* Typography */
+    font-size: 32px;
+    letter-spacing: -0.2px;
+
+    &:lang(zh-TW) {
+      /* Typography */
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .clio-h2 {
+    /* Typography */
+    font-size: 28px;
+    letter-spacing: 0;
+
+    &:lang(zh-TW) {
+      /* Typography */
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .clio-h3 {
+    /* Typography */
+    font-size: 22px;
+    letter-spacing: 0.2px;
+
+    &:lang(zh-TW) {
+      /* Typography */
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .clio-h4 {
+    /* Typography */
+    font-size: 19px;
+    letter-spacing: 0.5px;
+
+    &:lang(zh-TW) {
+      /* Typography */
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .clio-h5 {
+    /* Typography */
+    font-size: 16px;
+    letter-spacing: 0.2px;
+
+    &:lang(zh-TW) {
+      /* Typography */
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .clio-h6 {
+    /* Typography */
+    font-size: 12px;
+    letter-spacing: 0.5px;
+
+    &:lang(zh-TW) {
+      /* Typography */
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+  }
+}
